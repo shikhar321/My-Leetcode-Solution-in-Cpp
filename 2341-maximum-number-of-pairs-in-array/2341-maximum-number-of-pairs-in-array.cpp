@@ -7,7 +7,7 @@ public:
         for(int i = 0; i<nums.size(); i++) {
             mp[nums[i]]++;
         }
-        for(auto it: mp) {
+        for(auto &it: mp) {
             if(it.second%2 == 0) {
                 first += it.second/2;
             }
