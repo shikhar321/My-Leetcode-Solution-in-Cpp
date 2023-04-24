@@ -14,7 +14,7 @@ public:
                     increment++;
                 }
             }
-            else if(nums[i]<10) {
+            else {
                 increment = 1;
             }
             i += increment;
