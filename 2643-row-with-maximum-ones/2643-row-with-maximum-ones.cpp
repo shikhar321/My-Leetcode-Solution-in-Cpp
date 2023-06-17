@@ -9,11 +9,9 @@ public:
             count = 0;
             for(int j = 0; j<mat[i].size(); j++) {
                 if(mat[i][j] == 1)  count++;
-                // cout<<count<<endl;
             }
             if(maxi < count)    index = i;
             maxi = max(maxi, count);
-            cout<<maxi<<endl;
         }
         return {index, maxi};
     }
